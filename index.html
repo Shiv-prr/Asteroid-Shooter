@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Space Shooter GUI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="shooter.css">
+    <script src="shooter.js" defer></script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="layout">
+
+
+            <div id="game-container">
+                <canvas id="gameCanvas"></canvas>
+                <div id="ui-container">
+                    <div id="score-level">
+                        <div id="score">Score: 0</div>
+                        <div id="level">Level: 1</div>
+                    </div>
+                    <div id="lives"></div>
+                    <button id="game-exit-button" class="game-button popup-exit" type="button">✖</button>
+                </div>
+
+                <div id="mobile-controls">
+                    <div class="control-cluster left-cluster">
+                        <button id="btn-left" class="mobile-btn">⮜</button>
+                        <button id="btn-right" class="mobile-btn">⮞</button>
+                    </div>
+                    <div class="control-cluster right-cluster">
+                        <button id="btn-shoot" class="mobile-btn action-btn">FIRE</button>
+                        <button id="btn-thrust" class="mobile-btn">🚀</button>
+                    </div>
+                </div>
+
+                <div id="start-screen" class="game-overlay">
+                    <div class="title-block">
+                        <span class="title-top">ASTEROID</span>
+                        <span class="title-bottom">SHOOTER</span>
+                    </div>
+                    <div class="menu-buttons">
+                        <button id="start-button" class="game-button">START</button>
+                    </div>
+                    <p class="hint">W/A/S/D or Arrow Keys to Navigate &bullet; Spacebar to Fire</p>
+                </div>
+
+
+
+                <div id="game-over-screen" class="game-overlay">
+                    <h1>GAME OVER</h1>
+                    <p id="final-score">Your Score: 0</p>
+                    <button id="restart-button" class="game-button">Restart</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
