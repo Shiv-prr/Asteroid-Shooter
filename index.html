@@ -20,11 +20,13 @@
             <div id="game-container">
                 <canvas id="gameCanvas"></canvas>
                 <div id="ui-container">
-                    <div id="score-level">
-                        <div id="score">Score: 0</div>
-                        <div id="level">Level: 1</div>
+                    <div class="left-stats" style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+                        <div id="score-level">
+                            <div id="score">Score: 0</div>
+                            <div id="level">Level: 1</div>
+                        </div>
+                        <div id="lives"></div>
                     </div>
-                    <div id="lives"></div>
                     <button id="game-exit-button" class="game-button popup-exit" type="button">✖</button>
                 </div>
 
